@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ShareShed: Campus Resource Sharing</title>
+<link rel="stylesheet" href="style.css"></head><body>
+<header><div class="brand">ShareShed<small>Share campus labs, tools and rooms safely</small></div>
+<label class="mut">Acting as <select id="who" onchange="sw(this.value)"></select></label></header>
+<main><details><summary>Demo guide: one full journey in 6 steps</summary><ol class="mut">
+<li>Acting as <b>Asha</b> (trained): open Find resources, book the 3D Printer.</li>
+<li>Switch to <b>Dr. Mehta</b>: open Requests, approve it.</li>
+<li>Switch to <b>Rahul</b> (not trained): see the training block. Book the Camera Kit for the same time Asha has an approved slot, to see the waiting list.</li>
+<li>Back to <b>Asha</b>: check in with a condition note, then return it as Damaged to log an incident.</li>
+<li>Open History: every action is recorded for both sides.</li>
+<li>Use Reset demo data at the bottom to start again.</li></ol></details>
+<div id="app"></div>
+<p><button class="btn alt" onclick="if(confirm('Delete all demo data?')){S=seed();save();R()}">Reset demo data</button></p>
+<p class="mut">Prototype built during CodeHack India 2026 with AI assistance (Claude). Demo data is fictional and saved only in this browser.</p></main>
+<script src="script.js"></script></body></html>
